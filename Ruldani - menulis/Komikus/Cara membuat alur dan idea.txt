@@ -1,0 +1,44 @@
+Point point materi untuk tugas dishare setelah pertemuan
+
+Tema cerita berdasarkan pengalaman pribadi
+Genre bebas
+
+How to membangun cerita
+
+//  Ide Utama komik
+1.  Ide : Berasal dari ide tentang pengalaman pribadi, tema atau lainya
+2.  Konsep unik : Pengembangan dari ide
+
+//  Premis
+3.  Bangun premis : seorang anak yatim mendapatkan kekuatan untuk menyelamatkan desa
+
+//  Logline
+4.  Bangun premis yang punchline
+5.  Hook, konflik longline anak yatim itu harus memilih antara teman atau desanya
+6.  Komik kompilasi
+
+//  Struct
+7.  Membuat outline dan struct cerita
+8.  Perkenelan dan konlik, perjuangan dan titik, klimaks dan solusi (kishotenketsu)
+
+//  Character development
+9.  Siapa yang menjadi 
+10. Siapa yang menjadi main atagonis
+11. Siapa yang menjadi supporting
+12. Siapa yang menjadi Cameo
+
+//  Penokohan
+13. Motivasi dan latar belakang char
+14. Kelebihan dan kelemahan char
+15. Desain visual char
+
+//  Dinamika antar char
+16. Konflik, rivalitas, Percintaan
+17. Character Development
+
+
+//  Kerangka cerita
+18. Garis besar cerita berisi sejumlah halaman
+19. Baru tambahkan comic sript
+20. Comic script berisi : Suasana, musik, interior, latar, percakapan, paneling, paneling long
+21. 

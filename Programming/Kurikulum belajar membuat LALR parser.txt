@@ -1,0 +1,133 @@
+TAHAPAN BELAJAR LALR PARSER
+===========================
+
+TAHAP 1: PEMAHAMAN DASAR TEORI BAHASA FORMAL
+--------------------------------------------
+- Grammar (Tata Bahasa Formal)
+  * Non-terminal vs Terminal symbols
+  * Production rules
+  * Start symbol
+- Hierarki Chomsky
+  * Context-Free Grammar (CFG) - fokus utama
+- Derivasi
+  * Leftmost vs Rightmost derivation
+- Parse Tree dan Abstract Syntax Tree (AST)
+
+TAHAP 2: MEMAHAMI JENIS-JENIS PARSER
+-------------------------------------
+- Parser Top-Down:
+  * Recursive Descent
+  * LL Parser
+  * Kelebihan dan keterbatasan
+
+- Parser Bottom-Up:
+  * Konsep dasar shift-reduce
+  * Kelebihan bottom-up vs top-down
+  * LALR sebagai jenis bottom-up parser
+
+TAHAP 3: KONSEP DASAR BOTTOM-UP PARSING
+----------------------------------------
+- Shift-Reduce Operations
+- Handle
+- Viable Prefix
+- LR(0) Items
+  * Item dasar: A -> α•β
+  * Closure operation
+  * Goto operation
+
+TAHAP 4: FINITE AUTOMATA UNTUK LR PARSER
+-----------------------------------------
+- LR(0) Automaton
+  * State construction
+  * Transition between states
+- SLR Parser
+  * Menggunakan FOLLOW sets untuk resolve conflicts
+
+TAHAP 5: MEMAHAMI LR(1) DAN LALR
+---------------------------------
+- LR(1) Parser:
+  * LR(1) items dengan lookahead
+  * Lebih powerful dari SLR
+  * Tapi menghasilkan banyak state
+
+- LALR Parser:
+  * Konsep: Merge states LR(1) yang compatible
+  * Keuntungan: Ukuran tabel seperti SLR, power seperti LR(1)
+  * Proses: LR(1) state construction + state merging
+
+TAHAP 6: ALGORITMA KONSTRUKSI LALR
+-----------------------------------
+Langkah-langkah detail:
+1. Hitung FIRST dan FOLLOW sets
+2. Buat LR(1) item sets
+3. Hitung closure untuk setiap state
+4. Merge compatible LR(1) states
+5. Bangun parsing table
+   - ACTION table (shift, reduce, accept, error)
+   - GOTO table
+
+TAHAP 7: IMPLEMENTASI SEDERHANA
+--------------------------------
+Contoh grammar sederhana:
+E -> E + T
+E -> T
+T -> T * F
+T -> F
+F -> ( E )
+F -> id
+
+Langkah implementasi:
+1. Tulis grammar dalam format BNF
+2. Hitung FIRST/FOLLOW sets manual
+3. Bangun LALR automaton di kertas
+4. Buat parsing table
+5. Implementasi parser sederhana
+
+TAHAP 8: TOOLS DAN IMPLEMENTASI PRAKTIS
+----------------------------------------
+Menggunakan parser generator:
+- Bison (C/C++)
+- YACC (C)
+- Happy (Haskell)
+- CUP (Java)
+
+TAHAP 9: HANDLING AMBIGUITY DAN CONFLICTS
+------------------------------------------
+Jenis conflicts:
+- Shift/Reduce conflict
+- Reduce/Reduce conflict
+
+Resolution strategies:
+- Precedence and associativity declarations
+- Grammar restructuring
+- Disambiguating rules
+
+TAHAP 10: ADVANCED TOPICS
+--------------------------
+- Error recovery in LALR parsers
+- Abstract syntax tree construction
+- Semantic actions
+- Integration with lexical analyzer
+- Performance optimization
+
+PROJECT BELAJAR YANG DISARANKAN
+--------------------------------
+1. Calculator sederhana
+2. Parser untuk subset JavaScript/Python
+3. Domain Specific Language (DSL) sederhana
+
+PERKIRAAN WAKTU BELAJAR
+------------------------
+- Tahap 1-3: 1-2 minggu
+- Tahap 4-6: 2-3 minggu
+- Tahap 7-8: 1-2 minggu
+- Tahap 9-10: 1-2 minggu
+Total: 5-9 minggu untuk penguasaan solid
+
+TIPS BELAJAR
+------------
+1. Mulai dengan contoh sederhana
+2. Visualisasi automata
+3. Practice manual construction sebelum menggunakan tools
+4. Debug dengan small grammars terlebih dahulu
+5. Pahami error messages dari parser generators
